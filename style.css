@@ -122,7 +122,7 @@ main{
     gap: 10px;
 }   
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1025px) {
 
     header{
         position: relative;
@@ -141,6 +141,10 @@ main{
 
     .menu3{
         display: block;
+    }
+
+    .menu3 a{
+        font-size: 20px;
     }
 
     .menu3 ul{
