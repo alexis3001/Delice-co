@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <div class="header.burger">
+        <div class="header-burger">
             <input type="checkbox" id="menu-toggle" hidden>
             <label for="menu-toggle" class="menu-burger">
             <img src="./images/menuburger.png" alt="menuburger">
@@ -20,15 +20,20 @@
             </div>
         </div>
 
-        <div class="header.search">
-            <img src="./images/loupe.png" alt="loupe">
+        <div class="menu3">
+            <nav>
+                <ul>
+                    <li><a href="recettesemaine.html">Recette de la semaine</a></li>
+                    <li><a href="recette.html">Recettes</a></li>
+                </ul>
+            </nav>
         </div>
 
         <div class="header.title">
            <a href="index.html"><img class="logosite" src="./images/logosite.png" alt="logosite"></a>
         </div>
 
-        <div class="menu.container">
+        <div class="menu-container">
             <input type="checkbox" id="menu-toggle2" hidden>
             <label for="menu-toggle2" class="menu-login">
                 <img class="imglogin" src="./images/login.png" alt="login">
@@ -43,9 +48,14 @@
     
     <main>
         <h1>Connexion</h1>
+        <hr>
                 <form class="form-block" action="#" method="post">
-                    <input type="email" placeholder="E-mail" required />
-                    <input type="password" placeholder="Mot De Passe" required />
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" required/>
+                    <label for="email">Email :</label>
+                    <input type="email" id="email"required />
+                    <label for="password">Mot de passe :</label>
+                    <input type="password" required />
                     <button class=submit type="submit">Se connecter</button>
                 </form>
     </main>
