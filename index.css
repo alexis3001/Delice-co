@@ -1,0 +1,60 @@
+footer{
+
+    background-color: #FFF0E5;
+    justify-content: space-between;
+    box-shadow: black 10px,10px,10px,10px;
+}
+
+.textefooter{
+    display: block;
+    justify-self: center;
+}
+
+
+input{
+    size-adjust: 100%;
+}
+
+.button{
+    background-color: #2A9D8F;
+    border-radius: 2%;
+}
+
+.loupe{
+    width: 10%;
+}
+
+.logo{
+    width: 10%;
+    display: flex;
+    justify-self: center;
+    display: inline;
+    flex-wrap: nowrap;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.divlogo{
+    display: flex;
+    justify-content: center;
+}
+
+@font-face {
+    font-family: 'Liberation sans';
+    src: url('./KaushanScript-Regular.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Liberation sans';
+    src: url('./KaushanScript-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    font-family: 'Liberation sans', sans-serif;
+}
