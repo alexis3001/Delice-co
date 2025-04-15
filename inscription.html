@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+    <header>
+    <div class="header.burger">
+        <img src="./images/menuburger.png" alt="menuburger">
+    </div>
+
+    <div class="header.search">
+        <img src="./images/loupe.png" alt="loupe">
+    </div>
+
+    <div class="header.title">
+       <a href="index.html"><h1>Délices & Co</h1></a>
+    </div>
+
+    <div class="menu.container">
+        <input type="checkbox" id="menu-toggle" hidden>
+        <label for="menu-toggle" class="menu-login">
+            <img src="./images/login.png" alt="login">
+        </label>
+        <div class="menu">
+        <a href="connexion.html">Connexion</a>
+        <hr>
+        <a href="inscription.html">Incription</a>
+        </div>
+    </div>
+    </header>
+
+    <main>
+        <h1>Incription</h1>
+            <form class="form-block" action="#" method="post" class="signup"></form>
+                <input type="text" placeholder="Nom Complet" required/>
+                <input type="email" placeholder="E-mail" required />
+                <input type="password" placeholder="Mot De Passe" required />
+                <button class=submit type="submit">Se connecter</button>
+            </form>
+    </main>
+    
+</body>
+</html>
