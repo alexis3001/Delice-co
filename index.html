@@ -1,40 +1,101 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Délices & Co</title>
-    <link rel="stylesheet" type="text/css" href="style.css"/>
-</head>
-<body>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="text/css" href="style2.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kavivanar&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <div class="header.burger">
-            <img src="./images/menuburger.png" alt="menuburger">
-        </div>
-
-        <div class="header.search">
-            <img src="./images/loupe.png" alt="loupe">
-        </div>
-
-        <div class="header.title">
-           <a href="index.html"><h1>Délices & Co</h1></a>
-        </div>
-
-        <div class="menu.container">
-            <input type="checkbox" id="menu-toggle" hidden>
-            <label for="menu-toggle" class="menu-login">
-                <img src="./images/login.png" alt="login">
-            </label>
-            <div class="menu">
-                <a href="connexion.html">Connexion</a>
-            <hr>
-                <a href="inscription.html">Inscription</a>
-            </div>
-        </div>
+      <h6>head</h6>
     </header>
-
     <main>
-        <h2>ACCEUIL</h2>
+      <div class="container">
+        <img class="img1" src="./images/snappr-oy1IVqPg1EA-unsplash.jpg" alt="tacos" />
+        <div class="search-wrapper">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M15.5 14h-.79l-.28-.27
+          A6.471 6.471 0 0016 9.5
+          6.5 6.5 0 109.5 16
+          c1.61 0 3.09-.59 4.23-1.57l.27.28v.79
+          l5 4.99L20.49 19l-4.99-5zm-6 0C8.01 14 6 11.99 6 9.5
+          S8.01 5 10.5 5 15 7.01 15 9.5
+          12.99 14 10.5 14z"
+            />
+          </svg>
+          <input type="text" placeholder="Rechercher..." />
+        </div>
+      </div>
+      <section class="content-intro">
+        <h2>La Fiesta des Papilles</h2>
+        <h4>Le goût du pays</h4>
+        <p class="p-intro">
+          Amoureux de saveurs épicées, de couleurs ensoleillées et de plats qui
+          sentent bon la fiesta ? Tu es au bon endroit ! Ici, on partage avec
+          passion les meilleures recettes mexicaines : tacos, enchiladas,
+          guacamole, quesadillas, ceviches et bien plus encore.
+        </p>
+        <br />
+        <p class="p-intro">
+          Que tu sois débutant curieux ou chef aguerri, chaque recette est
+          expliquée pas à pas, avec des astuces pour retrouver le vrai goût du
+          Mexique dans ta cuisine. Des plats traditionnels aux touches modernes,
+          il y en a pour tous les goûts… et toutes les envies ! Alors attrape
+          ton tablier, fais chauffer les tortillas, et ¡vamos a cocinar!
+        </p>
+      </section>
+      <hr />
+      <section class="content-1">
+        <div class="contentd-1">
+          <h2>Recette de la semaine</h2>
+
+          <h3>Tacos Mexicain</h3>
+          <p>
+            Laisse-toi emporter par les saveurs ensoleillées du Mexique et
+            prépare des tacos maison aussi délicieux que festifs !
+          </p>
+          <button class="btn1">Découvrir</button>
+        </div>
+        <img class="img2" src="./images/tacos 1.jpg" alt="tacos" />
+      </section>
+      <h2>Découvrez nos autres recettes</h2>
+      <section class="content-2">
+        <div class="recette">
+          <img
+            class="img3"
+            src="./images/salade-mexicaine-au-chili-9f149471.jpg"
+            alt="Salade Mexicaine"
+          />
+          <h3>Salade Mexciane au Chili</h3>
+        </div>
+        <div class="recette">
+          <img
+            class="img3"
+            src="./images/salade-de-cactus-17937ee1 1.jpg"
+            alt="Salade de cactus"
+          />
+          <h3>Salade de Cactus</h3>
+        </div>
+        <div class="recette">
+          <img
+            class="img3"
+            src="./images/chili-western-5da0fec4.jpg"
+            alt="Chili Western"
+          />
+          <h3>Chili Western</h3>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>
