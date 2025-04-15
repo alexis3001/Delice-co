@@ -20,24 +20,38 @@ header{
     height: 80px;
 }
 
+.imglogin{
+    width: 60px;
+    height: 60px;
+}
+
 header img{
     width: 40px;
     height: 40px;
 }
 
-header h1{
-    font-size: 16px;
+.menu{
+    position: absolute;
+    border: 1px solid #FFF0E5;
+    justify-content: center;
+    background-color: #FFF0E5;
+    display: none;
+}
+
+.menu-burger{
+    background-color: #FFF0E5;
+    color: black;
+    cursor: pointer;
+    border: none;
+    display: inline-block;
+}
+
+#menu-toggle:checked + .menu-burger + .menu{
+    display: block;
 }
 
 .menu.container{
     position: relative
-}
-
-.menu{
-    position: absolute;
-    border: 1px solid black;
-    justify-content: center;
-    background-color: #FFF0E5;
 }
 
 a{
@@ -51,12 +65,23 @@ a{
 }
 
 .menu-login{
-    padding: 10px 20px;
     background-color: #FFF0E5;
     color: black;
     cursor: pointer;
     border: none;
     display: inline-block;
+}
+
+.menu2{
+    position: absolute;
+    border: 1px solid #FFF0E5;
+    justify-content: center;
+    background-color: #FFF0E5;
+    display: none;
+}
+
+#menu-toggle2:checked + .menu-login + .menu2{
+    display: block;
 }
 
 .form-box{
@@ -69,11 +94,17 @@ a{
     background: rgb(78, 121, 141);
 }
 
+
 .submit{
     margin-top: 10px;
 }
 
-#menu-toggle:checked + .menu-login + .menu{
-    display: none;
+
+h2{
+    text-align: center;
+    margin-top: 30px;
 }
 
+@media screen and (min-width: 1024px) {
+
+}
