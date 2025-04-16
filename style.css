@@ -11,6 +11,11 @@
     padding: 0;
 }
 
+body {
+    font-family: "Kavivanar", cursive;
+    background-color: var(--couleur-main);
+  }
+
 header{
     position: relative;
     display: flex;
@@ -22,9 +27,13 @@ header{
     background-color: var(--couleur-header);
 }
 
+.header-burger{
+    margin-top: -50px;
+}
+
 .logosite{
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
 }
 
 .imglogin{
@@ -69,7 +78,8 @@ header img{
 }
 
 .menu-inscription-connexion{
-    position: relative
+    position: relative;
+    top: -10px;
 }
 
 a{
@@ -92,10 +102,11 @@ a{
 
 .menu2{
     position: absolute;
-    border: 1px solid #FFF0E5;
+    border: 1px solid var(--couleur-header);
     justify-content: center;
-    background-color: #FFF0E5;
+    background-color: var(--couleur-header);
     display: none;
+    right: -18px;
 }
 
 #menu-toggle2:checked + .menu-login + .menu2{
@@ -105,7 +116,6 @@ a{
 .submit{
     margin-top: 10px;
 }
-
 
 h1{
     text-align: center;
@@ -117,6 +127,7 @@ h1{
 }
 
 input, button{
+    font-family: "Kavivanar", cursive;
     text-align: center;
     width: 200px;
     height: 20px;
@@ -158,14 +169,9 @@ main{
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
+        background-color: var(--couleur-header);
         width: 100%;
         height: 150px;
-        background-color: var(--couleur-header);
-    }
-    
-    .logosite{
-        width: 80px;
-        height: 80px;
     }
     
     .imglogin{
@@ -210,8 +216,9 @@ main{
     }
     
     .menu-inscription-connexion{
-        position: relative
-    }
+        position: relative;
+        top: -10px;
+    }    
     
     a{
         text-decoration: none;
@@ -253,9 +260,6 @@ main{
         margin-top: 30px;
     }
     
-    .menu3{
-        display: none;
-    }
     
     input, button{
         text-align: center;
@@ -305,7 +309,7 @@ main{
     header{
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
         position: relative
     }
 
@@ -350,14 +354,18 @@ main{
         background-color: var(--couleur-button);
         color: white;
     }
-    
+
+    .menu2{
+        right: -26px;
+    }
+
     .form-block{
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 10px;
     }
-    
+
     input, button{
         text-align: center;
         width: 200px;
@@ -366,5 +374,5 @@ main{
         border: 2px solid black;
         background-color:var(--couleur-button);
         color: white;
-    }   
+    }
 }
