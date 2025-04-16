@@ -18,7 +18,7 @@ header{
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    height: 100px;
+    height: 150px;
     background-color: var(--couleur-header);
 }
 
@@ -39,10 +39,21 @@ header img{
 
 .menu{
     position: absolute;
-    border: 1px solid var(--couleur-header);
     justify-content: center;
-    background-color: var(--couleur-header);
     display: none;
+    left: 20px;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu a{
+    font-size: 15px;
+    border-radius: 20px;
+    border: 2px solid black;
+    background-color: var(--couleur-button);
+    color: white;
 }
 
 .menu-burger{
@@ -106,14 +117,23 @@ h1{
 }
 
 input, button{
+    text-align: center;
     width: 200px;
     height: 20px;
     border-radius: 20px;
     border: 2px solid black;
-    background-color:--couleur-button;
+    background-color:var(--couleur-button);
     color: white;
 }
 
+.menu-inscription-connexion a{
+    font-size: 15px;
+    border-radius: 20px;
+    border: 2px solid black;
+    background-color: var(--couleur-button);
+    color: white;
+    right: 20px;
+}
 
 
 main{
@@ -129,6 +149,149 @@ main{
     align-items: center;
     gap: 10px;
 }   
+
+@media (min-width: 600px) and (max-width: 1024px){
+    
+    header{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: 150px;
+        background-color: var(--couleur-header);
+    }
+    
+    .logosite{
+        width: 80px;
+        height: 80px;
+    }
+    
+    .imglogin{
+        width: 40px;
+        height: 40px;
+    }
+    
+    header img{
+        width: 40px;
+        height: 40px;
+    }
+    
+    .menu{
+        position: absolute;
+        justify-content: center;
+        display: none;
+        left: 50px;
+    }
+    
+    .menu ul {
+        list-style: none;
+    }
+    
+    .menu a{
+        font-size: 15px;
+        border-radius: 20px;
+        border: 2px solid black;
+        background-color: var(--couleur-button);
+        color: white;
+    }
+    
+    .menu-burger{
+        background-color: var(--couleur-header);
+        color: black;
+        cursor: pointer;
+        border: none;
+        display: inline-block;
+    }
+    
+    #menu-toggle:checked + .menu-burger + .menu{
+        display: block;
+    }
+    
+    .menu-inscription-connexion{
+        position: relative
+    }
+    
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    
+    .menu hr{
+        width: 40px;
+        display: flex;
+    }
+    
+    .menu-login{
+        background-color: var(--couleur-header);
+        color: black;
+        cursor: pointer;
+        border: none;
+        display: inline-block;
+    }
+    
+    .menu2{
+        position: absolute;
+        border: 1px solid #FFF0E5;
+        justify-content: center;
+        background-color: #FFF0E5;
+        display: none;
+    }
+    
+    #menu-toggle2:checked + .menu-login + .menu2{
+        display: block;
+    }
+    
+    .submit{
+        margin-top: 10px;
+    }
+    
+    
+    h1{
+        text-align: center;
+        margin-top: 30px;
+    }
+    
+    .menu3{
+        display: none;
+    }
+    
+    input, button{
+        text-align: center;
+        width: 200px;
+        height: 20px;
+        border-radius: 20px;
+        border: 2px solid black;
+        background-color:var(--couleur-button);
+        color: white;
+    }
+    
+    .menu-inscription-connexion a{
+        font-size: 15px;
+        border-radius: 20px;
+        border: 2px solid black;
+        background-color: var(--couleur-button);
+        color: white;
+        right: 50px;
+    }
+    
+    
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .form-block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }   
+    
+}
 
 @media screen and (min-width: 1025px) {
 
@@ -170,7 +333,7 @@ main{
         font-size: 20px;
         border-radius: 20px;
         border: 2px solid black;
-        background-color: #2A9D8F;
+        background-color: var(--couleur-button);
         color: white;
     }
 
@@ -180,10 +343,28 @@ main{
         margin: 0;
     }
 
+    .menu-inscription-connexion a{
+        font-size: 20px;
+        border-radius: 20px;
+        border: 2px solid black;
+        background-color: var(--couleur-button);
+        color: white;
+    }
+    
     .form-block{
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 10px;
+    }
+    
+    input, button{
+        text-align: center;
+        width: 200px;
+        height: 20px;
+        border-radius: 20px;
+        border: 2px solid black;
+        background-color:var(--couleur-button);
+        color: white;
     }   
 }
