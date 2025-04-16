@@ -151,6 +151,10 @@ header {
   margin: auto;
 }
 
+.content-2 h3 {
+  text-align: center;
+}
+
 .recette {
   margin-top: 40px;
 }
@@ -233,8 +237,12 @@ h3 {
     width: 70%;
   }
 
-  .content-2 {
-    flex-wrap: nowrap;
+  .title-recette {
+    margin-top: 100px;
+  }
+
+  .content-2 h3 {
+    text-align: center;
   }
 
   .img3 {
@@ -243,6 +251,10 @@ h3 {
 }
 
 @media (min-width: 1025px) {
+  /* body {
+    margin-left: 50px;
+    margin-right: 50px;
+  } */
   .search-wrapper {
     top: 40%;
     left: 135%;
@@ -257,8 +269,8 @@ h3 {
   .p-intro {
     text-align: center;
     margin-top: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
     line-height: 50px;
     font-size: 25px;
   }
