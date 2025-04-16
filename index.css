@@ -1,23 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+
 footer{
 
     background-color: #FFF0E5;
-    justify-content: space-between;
     box-shadow: black 10px,10px,10px,10px;
+    padding-top: 1%;
 }
 
 .textefooter{
     display: block;
     justify-self: center;
+    flex-direction: row;
+    margin-top: 2.5%;
+    font-size: x-large;
 }
 
 
-input{
-    size-adjust: 100%;
+
+h3{
+    display: flex;
+    justify-content: center;
+    margin: 4%;
+    font-size: x-large;
 }
+
+.pfooter{
+    margin-top: 1%;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    transition: color 0.5s ease-in-out;
+}
+
+.pfooter:hover{
+    color: #2A9D8F;
+}
+
+.divfooter{
+    display: flex;
+    justify-content: center;
+}
+
 
 .button{
     background-color: #2A9D8F;
-    border-radius: 2%;
+    transition: background-color 0.5s ease-in-out;
+    border-radius: 20px;
+    width: 30%;
+}
+
+.button:hover{
+    background-color: red;
 }
 
 .loupe{
@@ -25,13 +62,14 @@ input{
 }
 
 .logo{
-    width: 10%;
+    width: 5%;
     display: flex;
     justify-self: center;
     display: inline;
     flex-wrap: nowrap;
-    padding-left: 4%;
-    padding-right: 4%;
+    margin: 2%;
+    margin-bottom: 1%;
+    margin-top: -2%;
 }
 
 .divlogo{
@@ -57,4 +95,33 @@ input{
 
 * {
     font-family: 'Liberation sans', sans-serif;
+}
+
+@media (max-width: 600px) {
+    .logo{
+        width: 10%;
+    }
+
+    .textefooter{
+        font-size: 90%;
+        margin-top: 3%;
+        font-size: larger;
+    }
+
+    h3{
+    }
+
+    p{
+        
+        display: flex;
+        justify-content: center;
+    }
+
+    .pfooter{
+        margin-top: 2%;
+        font-size: 70%;
+        display: flex;
+        justify-content: center;
+    }
+
 }
