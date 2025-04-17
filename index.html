@@ -4,9 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Délices & Co</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet" href="text/css" href="style2.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"
       rel="stylesheet"
@@ -17,13 +16,53 @@
     />
   </head>
   <body>
-
     <header>
-      <h6>head</h6>
+      <div class="header-burger">
+        <input type="checkbox" id="menu-toggle" hidden />
+        <label for="menu-toggle" class="menu-burger">
+          <img src="./images/menuburger.png" alt="menuburger" />
+        </label>
+        <div class="menu">
+          <ul>
+            <li><a href="recettes.html">Recettes</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="menu3">
+        <nav>
+          <ul>
+            <li><a href="recettes.html">Recettes</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="header-title">
+        <a href="index.html"
+          ><img class="logosite" src="./images/logosite.png" alt="logosite"
+        /></a>
+      </div>
+
+      <div class="menu-inscription-connexion">
+        <input type="checkbox" id="menu-toggle2" hidden />
+        <label for="menu-toggle2" class="menu-login">
+          <img class="imglogin" src="./images/login.png" alt="login" />
+        </label>
+        <div class="menu2">
+          <a href="connexion.html">Connexion</a>
+          <a href="inscription.html">Inscription</a>
+        </div>
+      </div>
     </header>
     <main>
       <div class="container">
-        <img class="img1" src="./images/snappr-oy1IVqPg1EA-unsplash.jpg" alt="tacos" />
+        <img
+          class="img1"
+          src="./images/snappr-oy1IVqPg1EA-unsplash.jpg"
+          alt="tacos"
+        />
         <div class="search-wrapper">
           <svg viewBox="0 0 24 24">
             <path
@@ -61,18 +100,17 @@
       <section class="content-1">
         <div class="contentd-1">
           <h2>Recette de la semaine</h2>
-         
+
           <h3>Tacos Mexicain</h3>
           <p>
             Laisse-toi emporter par les saveurs ensoleillées du Mexique et
             prépare des tacos maison aussi délicieux que festifs !
           </p>
-          <button class="btn1">Découvrir</button>
-          </div>
-
+          <a href="./recettes.html"><button class="btn1">Découvrir</button></a>
         </div>
         <img class="img2" src="./images/tacos 1.jpg" alt="tacos" />
       </section>
+      <hr>
       <h2 class="title-recette">Découvrez nos autres recettes</h2>
       <section class="content-2">
         <div class="recette">
@@ -91,36 +129,45 @@
           />
           <h3>Salade de Cactus</h3>
         </div>
+        <div class="recette">
+          <img
+            class="img3"
+            src="./images/chili-western-5da0fec4.jpg"
+            alt="Chili Western"
+          />
+          <h3>Chili Western</h3>
+        </div>
       </section>
-    <footer>
+      <footer>
+        <section class="contacter" id="contact">
+          <h3>Nous contacter:</h3>
+          <p class="textefooter">
+            Email: <br /><input type="datetime" name="votre nom" id="" />
+          </p>
+          <p class="textefooter">
+            Nom: <br /><input type="datetime" name="" id="" />
+          </p>
+          <button type="reset" class="button textefooter" form="">
+            Envoyer
+          </button>
+        </section>
 
-    <section class="contacter" id="contact"> 
-        <h3>Nous contacter:</h3>
-        <p class="textefooter">Email: <br><input type="datetime" name="votre nom" id=""></p>
-        <p class="textefooter">Nom: <br><input type="datetime" name="" id=""></p>
-        <button type="reset" class="button textefooter" form="">Envoyer</button>
-    </section>
+        <h3 class="h3footer">Nos réseaux:</h3>
 
-    <h3 class="h3footer">Nos réseaux:</h3>
+        <div class="divlogo">
+          <img src="./images/youtube.png" alt="youtube" class="logo" />
+          <img src="./images/instagram.png" alt="instagram" class="logo" />
+          <img src="./images/twitter.png" alt="twitter" class="logo" />
+        </div>
 
-    <div class="divlogo">
-     <img src="./images/youtube.png" alt="youtube" class="logo">
-     <img src="./images/instagram.png" alt="instagram" class="logo">
-     <img src="./images/twitter.png" alt="twitter" class="logo">
-    </div>
-     
-    <div class="divfooter">
-     <p class="pfooter"> Mentions légales -</p>
-     <p class="pfooter"> Paramètre des cookies-</p>
-     <p class="pfooter"> Conditions d'utilisation général</p>
-    </div>
+        <div class="divfooter">
+          <p class="pfooter">Mention légale -</p>
+          <p class="pfooter">Paramètre des cookie-</p>
+          <p class="pfooter">Condition d'utilisation général</p>
+        </div>
 
-     <p class="pfooter">Copyright © 2025. Tous droits réservés. </p>
-
-    
-    
-
-
-    </footer>
-</body>
+        <p class="pfooter">Copyright © 2025. Tous droits réservés.</p>
+      </footer>
+    </main>
+  </body>
 </html>
