@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Délices & Co</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="./index.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"
       rel="stylesheet"
@@ -16,7 +17,41 @@
   </head>
   <body>
     <header>
-      <h6>head</h6>
+      <div class="header-burger">
+        <input type="checkbox" id="menu-toggle" hidden />
+        <label for="menu-toggle" class="menu-burger">
+          <img src="./images/menuburger.png" alt="menuburger" />
+        </label>
+        <div class="menu">
+          <ul>
+            <li><a href="recettes.html">Recettes</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu3">
+        <nav>
+          <ul>
+            <li><a href="recettes.html">Recettes</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-title">
+        <a href="index.html"
+          ><img class="logosite" src="./images/logosite.png" alt="logosite"
+        /></a>
+      </div>
+      <div class="menu-inscription-connexion">
+        <input type="checkbox" id="menu-toggle2" hidden />
+        <label for="menu-toggle2" class="menu-login">
+          <img class="imglogin" src="./images/login.png" alt="login" />
+        </label>
+        <div class="menu2">
+          <a href="connexion.html">Connexion</a>
+          <a href="inscription.html">Inscription</a>
+        </div>
+      </div>
     </header>
     <main>
       <div class="container">
@@ -43,7 +78,7 @@
       <section class="content-i">
         <h2>Recette de la semaine</h2>
         <h3><b>Tacos Mexcicain</b></h3>
-        <div class="content-intro">
+        <div class="content-intro-i">
           <img class="img-intro" src="./images/tacos 1.jpg" alt="Tacos" />
           <p>
             Prépare-toi à faire voyager tes papilles direction le Mexique avec
@@ -79,11 +114,11 @@
           <p>Un couteau</p>
         </div>
         <div class="ustensiles">
-          <img src="./images/bol.jfif" alt="bol" />
+          <img src="./images/bol.jpg" alt="bol" />
           <p>Un bol</p>
         </div>
         <div class="ustensiles">
-          <img src="./images/planche-découper.jfif" alt="planche à découper" />
+          <img src="./images/planche-découper.jpg" alt="planche à découper" />
           <p>Planche à découper</p>
         </div>
       </section>
@@ -111,15 +146,15 @@
           <p>Poivron Rouge ou vert</p>
         </div>
         <div class="ingrédients2">
-          <img src="./images/maïs.jfif" alt="mais" />
+          <img src="./images/maïs.jpg" alt="mais" />
           <p>Maïs</p>
         </div>
         <div class="ingrédients2">
-          <img src="./images/aïl.jfif" alt="aïl" />
+          <img src="./images/aïl.jpg" alt="aïl" />
           <p>1 à 2 gousses d'aïl</p>
         </div>
         <div class="ingrédients2">
-          <img src="./images/épices.jfif" alt="épices" />
+          <img src="./images/épices.jpg" alt="épices" />
           <p>Epices : cumin, paprika, piment...</p>
         </div>
       </section>
@@ -129,7 +164,7 @@
           <p><b>Accompagnement & Toppings :</b></p>
         </div>
         <div class="ingrédients2">
-          <img src="./images/cheddar.jfif" alt="cheddar" />
+          <img src="./images/cheddar.jpg" alt="cheddar" />
           <p>Fromage râpé</p>
         </div>
         <div class="ingrédients2">
@@ -141,11 +176,11 @@
           <p>Tomates en dés ou salsa</p>
         </div>
         <div class="ingrédients2">
-          <img src="./images/guacamole.jfif" alt="guacamole" />
+          <img src="./images/guacamole.jpg" alt="guacamole" />
           <p>Guacamole</p>
         </div>
         <div class="ingrédients2">
-          <img src="./images/crème fraiche.jfif" alt="crème fraîche" />
+          <img src="./images/crème-fraiche.jpg" alt="crème fraîche" />
           <p>Crème fraîche ou sauce blanche</p>
         </div>
         <div class="ingrédients2">
@@ -217,6 +252,7 @@
           Recette Tacos Mexcicain en vidéo <br />(Exemple de recette possible)
         </p>
       </section>
+      <hr />
     </main>
     <footer>
       <section class="contacter" id="contact">
@@ -229,21 +265,17 @@
         </p>
         <button type="reset" class="button textefooter" form="">Envoyer</button>
       </section>
-
       <h3 class="h3footer">Nos réseaux:</h3>
-
       <div class="divlogo">
         <img src="./images/youtube.png" alt="youtube" class="logo" />
         <img src="./images/instagram.png" alt="instagram" class="logo" />
         <img src="./images/twitter.png" alt="twitter" class="logo" />
       </div>
-
       <div class="divfooter">
         <p class="pfooter">Mention légale -</p>
         <p class="pfooter">Paramètre des cookie-</p>
         <p class="pfooter">Condition d'utilisation général</p>
       </div>
-
       <p class="pfooter">Copyright © 2025. Tous droits réservés.</p>
     </footer>
   </body>
