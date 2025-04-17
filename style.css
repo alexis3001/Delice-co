@@ -28,6 +28,7 @@ header{
 }
 
 .header-burger{
+    position: relative;
     margin-top: -50px;
 }
 
@@ -50,11 +51,15 @@ header img{
     position: absolute;
     justify-content: center;
     display: none;
-    left: 20px;
+    left: -10px;
 }
 
 .menu ul {
-    list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
 }
 
 .menu a{
@@ -113,7 +118,7 @@ a{
     display: block;
 }
 
-.submit{
+.submit1{
     margin-top: 10px;
 }
 
@@ -126,7 +131,7 @@ h1{
     display: none;
 }
 
-input, button{
+header input, button{
     font-family: "Kavivanar", cursive;
     text-align: center;
     width: 200px;
@@ -159,7 +164,29 @@ main{
     flex-direction: column;
     align-items: center;
     gap: 10px;
-}   
+}
+
+.logo{
+  width: 10%;
+}
+
+.textefooter{
+  font-size: 90%;
+  margin-top: 3%;
+}
+.form{
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+
+
+.pfooter{
+  margin-top: 2%;
+  font-size: 70%;
+  display: flex;
+  justify-content: center;
+}
 
 @media (min-width: 600px) and (max-width: 1024px){
     
@@ -182,13 +209,6 @@ main{
     header img{
         width: 40px;
         height: 40px;
-    }
-    
-    .menu{
-        position: absolute;
-        justify-content: center;
-        display: none;
-        left: 50px;
     }
     
     .menu ul {
@@ -250,10 +270,6 @@ main{
         display: block;
     }
     
-    .submit{
-        margin-top: 10px;
-    }
-    
     
     h1{
         text-align: center;
@@ -261,7 +277,7 @@ main{
     }
     
     
-    input, button{
+    header input, button{
         text-align: center;
         width: 200px;
         height: 20px;
@@ -309,7 +325,7 @@ main{
     header{
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
         position: relative
     }
 
@@ -366,7 +382,7 @@ main{
         gap: 10px;
     }
 
-    input, button{
+    header input, button{
         text-align: center;
         width: 200px;
         height: 20px;
@@ -375,4 +391,112 @@ main{
         background-color:var(--couleur-button);
         color: white;
     }
+}
+
+/* /popoopopopopopopopopopopopoopopooppoopop */
+
+footer{
+
+  background-color: #FFF0E5;
+  box-shadow: black 10px,10px,10px,10px;
+  padding-top: 2%;
+}
+
+.textefooter{
+  display: block;
+  justify-self: center;
+  flex-direction: row;
+  margin-top: 2.5%;
+  font-size: x-large;
+}
+
+h3{
+  display: flex;
+  justify-content: center;
+  margin: 4%;
+  font-size: x-large;
+}
+
+.pfooter{
+  margin-top: 1%;
+  font-size: large;
+  display: flex;
+  justify-content: center;
+  transition: color 0.5s ease-in-out;
+  font-weight: bold;
+  margin-right: 1.5%;
+}
+
+.pfooter:hover{
+  color: #2A9D8F;
+}
+
+.divfooter{
+  display: flex;
+  justify-content: center;
+}
+
+
+.button{
+  background-color: #2A9D8F;
+  transition: background-color 0.5s ease-in-out;
+  border-radius: 20px;
+  width: 30%;
+}
+
+.button:hover{
+  background-color: red;
+}
+
+.loupe{
+  width: 10%;
+}
+
+.logo{
+  width: 5%;
+  display: flex;
+  justify-self: center;
+  flex-wrap: nowrap;
+  margin: 4%;
+  margin-bottom: 6%;
+  margin-top: 4%;
+}
+
+.divlogo{
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  --clr: #58bc82;
+  --clr-alpha: #9c9c9c60;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 300px;
+  justify-self: center;
+  border-radius: 20px;
+  padding: 1%;
+  background-color: white;
+}
+
+label{
+  display: block;
+  align-items: center;
+  font-weight: bold;
+}
+
+.input-span{
+  display: block;
+}
+
+.submit1{
+  background-color: #2A9D8F;
+  font-weight: bold;
+  width: 50%;
+  border-radius: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
