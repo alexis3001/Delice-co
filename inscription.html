@@ -4,44 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inscription</title>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
     <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kavivanar&display=swap"
+      rel="stylesheet"
+    />
 </head>
+
 <body>
     <header>
-    <div class="header.burger">
-        <img src="./images/menuburger.png" alt="menuburger">
-    </div>
-
-    <div class="header.search">
-        <img src="./images/loupe.png" alt="loupe">
-    </div>
-
-    <div class="header.title">
-       <a href="index.html"><h1>Délices & Co</h1></a>
-    </div>
-
-    <div class="menu.container">
-        <input type="checkbox" id="menu-toggle" hidden>
-        <label for="menu-toggle" class="menu-login">
-            <img src="./images/login.png" alt="login">
-        </label>
-        <div class="menu">
-        <a href="connexion.html">Connexion</a>
-        <hr>
-        <a href="inscription.html">Incription</a>
+        <div class="header-burger">
+            <input type="checkbox" id="menu-toggle" hidden>
+            <label for="menu-toggle" class="menu-burger">
+            <img src="./images/menuburger.png" alt="menuburger">
+            </label>
+            <div class="menu">
+                <ul>
+                    <li><a href="recettes.html">Recettes</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
+
+        <div class="menu3">
+            <nav>
+                <ul>
+                    <li><a href="recettes.html">Recettes</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header-title">
+           <a href="index.html"><img class="logosite" src="./images/logosite.png" alt="logosite"></a>
+        </div>
+
+        <div class="menu-inscription-connexion">
+            <input type="checkbox" id="menu-toggle2" hidden>
+            <label for="menu-toggle2" class="menu-login">
+                <img class="imglogin" src="./images/login.png" alt="login">
+            </label>
+            <div class="menu2">
+                <a href="connexion.html">Connexion</a>
+                <a href="inscription.html">Inscription</a>
+            </div>
+        </div>
     </header>
 
     <main>
-        <h1>Incription</h1>
-            <form class="form-block" action="#" method="post" class="signup"></form>
-                <input type="text" placeholder="Nom Complet" required/>
-                <input type="email" placeholder="E-mail" required />
-                <input type="password" placeholder="Mot De Passe" required />
-                <button class=submit type="submit">Se connecter</button>
+        <h1>Inscription</h1>
+            <form class="form-block" action="#" method="post" class="signup">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" required/>
+                <label for="email">Email :</label>
+                <input type="email" id="email"required />
+                <label for="password">Mot de passe :</label>
+                <input type="password" required />
+                <button class=submit1 type="submit">S'inscrire</button>
             </form>
+        
     </main>
+    <footer>
+        <section class="contacter" id="contact">
+          <h3>Nous contacter:</h3>
+          <p class="textefooter">
+            Email: <br /><input type="datetime" name="votre nom" id="" />
+          </p>
+          <p class="textefooter">
+            Nom: <br /><input type="datetime" name="" id="" />
+          </p>
+          <button type="reset" class="button textefooter" form="">
+            Envoyer
+          </button>
+        </section>
+
+        <h3 class="h3footer">Nos réseaux:</h3>
+
+        <div class="divlogo">
+          <img src="./images/youtube.png" alt="youtube" class="logo" />
+          <img src="./images/instagram.png" alt="instagram" class="logo" />
+          <img src="./images/twitter.png" alt="twitter" class="logo" />
+        </div>
+
+        <div class="divfooter">
+          <p class="pfooter">Mentions légales -</p>
+          <p class="pfooter">Paramètres des cookies</p>
+          <p class="pfooter">Conditions d'utilisation générales</p>
+        </div>
+
+        <p class="pfooter">Copyright © 2025. Tous droits réservés.</p>
+    </footer>
     
 </body>
 </html>

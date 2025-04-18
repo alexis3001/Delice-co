@@ -654,7 +654,6 @@ main {
     height: 10%;
     filter: blur(1px);
   }
-
   .p-intro {
     text-align: center;
     margin-top: 20px;
@@ -843,3 +842,512 @@ main {
     border-radius: 20px;
   }
 }
+
+body {
+    font-family: "Kavivanar", cursive;
+    background-color: var(--couleur-main);
+  }
+
+header{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 150px;
+    background-color: var(--couleur-header);
+}
+
+.header-burger{
+    position: relative;
+    margin-top: -50px;
+}
+
+.logosite{
+    width: 120px;
+    height: 120px;
+}
+
+.imglogin{
+    width: 40px;
+    height: 40px;
+}
+
+header img{
+    width: 40px;
+    height: 40px;
+}
+
+.menu{
+    position: absolute;
+    justify-content: center;
+    display: none;
+    left: -10px;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.menu a{
+    font-size: 15px;
+    border-radius: 20px;
+    border: 2px solid black;
+    background-color: var(--couleur-button);
+    color: white;
+}
+
+.menu-burger{
+    background-color: var(--couleur-header);
+    color: black;
+    cursor: pointer;
+    border: none;
+    display: inline-block;
+}
+
+#menu-toggle:checked + .menu-burger + .menu{
+    display: block;
+}
+
+.menu-inscription-connexion{
+    position: relative;
+    top: -20px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu hr{
+    width: 40px;
+    display: flex;
+}
+
+.menu-login{
+    background-color: var(--couleur-header);
+    color: black;
+    cursor: pointer;
+    border: none;
+    display: inline-block;
+}
+
+.menu2{
+    position: absolute;
+    border: 1px solid var(--couleur-header);
+    justify-content: center;
+    background-color: var(--couleur-header);
+    display: none;
+    right: -18px;
+}
+
+#menu-toggle2:checked + .menu-login + .menu2{
+    display: block;
+}
+
+.submit1{
+    margin-top: 10px;
+}
+
+h1{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.menu3{
+    display: none;
+}
+
+header input, button{
+    font-family: "Kavivanar", cursive;
+    text-align: center;
+    width: 200px;
+    height: 20px;
+    border-radius: 20px;
+    border: 2px solid black;
+    background-color:var(--couleur-button);
+    color: white;
+}
+
+
+.menu-inscription-connexion a{
+    font-size: 15px;
+    border-radius: 20px;
+    border: 2px solid black;
+    background-color: var(--couleur-button);
+    color: white;
+    right: 20px;
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo{
+  width: 10%;
+}
+
+.textefooter{
+  font-size: 90%;
+  margin-top: 3%;
+}
+.form{
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+
+
+.pfooter{
+  margin-top: 2%;
+  font-size: 70%;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 600px) and (max-width: 1024px){
+    
+    header{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        background-color: var(--couleur-header);
+        width: 100%;
+        height: 150px;
+    }
+    
+    .imglogin{
+        width: 40px;
+        height: 40px;
+    }
+    
+    header img{
+        width: 40px;
+        height: 40px;
+    }
+    
+    .menu ul {
+        list-style: none;
+    }
+    
+    .menu a{
+        font-size: 15px;
+        border-radius: 20px;
+        border: 2px solid black;
+        background-color: var(--couleur-button);
+        color: white;
+    }
+    
+    .menu-burger{
+        background-color: var(--couleur-header);
+        color: black;
+        cursor: pointer;
+        border: none;
+        display: inline-block;
+    }
+    
+    #menu-toggle:checked + .menu-burger + .menu{
+        display: block;
+    }
+    
+    .menu-inscription-connexion{
+        position: relative;
+        top: -20px;
+    }    
+    
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    
+    .menu hr{
+        width: 40px;
+        display: flex;
+    }
+    
+    .menu-login{
+        background-color: var(--couleur-header);
+        color: black;
+        cursor: pointer;
+        border: none;
+        display: inline-block;
+    }
+    
+    .menu2{
+        display: none;
+        position: absolute;
+        border: 1px solid #FFF0E5;
+        justify-content: center;
+        background-color: #FFF0E5;
+    }
+    
+    #menu-toggle2:checked + .menu-login + .menu2{
+        display: block;
+    }
+    
+    
+    h1{
+        text-align: center;
+        margin-top: 30px;
+    }
+    
+    
+    header input, button{
+        text-align: center;
+        width: 200px;
+        height: 20px;
+        border-radius: 20px;
+        border: 2px solid black;
+        background-color:var(--couleur-button);
+        color: white;
+    }
+    
+    .menu-inscription-connexion a{
+        font-size: 15px;
+        border-radius: 20px;
+        border: 2px solid black;
+        background-color: var(--couleur-button);
+        color: white;
+        right: 50px;
+    }
+    
+    
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .form-block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }   
+    
+}
+
+@media screen and (min-width: 1025px) {
+
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative
+    }
+
+    .header-title{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .menu3, .menu-inscription-connexion{
+        margin: 0 200px;
+    }
+
+    .header-burger{
+        display: none;
+    }
+
+    .imglogin{
+        display: none;
+    }
+
+    .menu3{
+        display: flex;
+        gap: 10px;
+    }
+
+    .menu3 nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+        margin: 20px 0;
+    }
+
+    .menu3 a{
+        font-size: 20px;
+        border-radius: 20px;
+        border: 2px solid black;
+        background-color: var(--couleur-button);
+        color: white;
+    }
+
+    .menu3 ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu-inscription-connexion a{
+        font-size: 20px;
+        border-radius: 20px;
+        border: 2px solid black;
+        background-color: var(--couleur-button);
+        color: white;
+    }
+
+    .menu2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2px;
+        margin-top: 10px;
+        right: -26px;
+        bottom: -50px;
+    }
+
+    .form-block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    header input, button{
+        text-align: center;
+        width: 200px;
+        height: 20px;
+        border-radius: 20px;
+        border: 2px solid black;
+        background-color:var(--couleur-button);
+        color: white;
+    }
+}
+
+/* /popoopopopopopopopopopopopoopopooppoopop */
+
+footer{
+
+  background-color: #FFF0E5;
+  box-shadow: black 10px,10px,10px,10px;
+  padding-top: 2%;
+}
+
+.textefooter{
+  display: block;
+  justify-self: center;
+  flex-direction: row;
+  margin-top: 2.5%;
+  font-size: x-large;
+}
+
+h3{
+  display: flex;
+  justify-content: center;
+  margin: 4%;
+  font-size: x-large;
+}
+
+.pfooter{
+  margin-top: 1%;
+  font-size: large;
+  display: flex;
+  justify-content: center;
+  transition: color 0.5s ease-in-out;
+  font-weight: bold;
+  margin-right: 1.5%;
+}
+
+.pfooter:hover{
+  color: #2A9D8F;
+}
+
+.divfooter{
+  display: flex;
+  justify-content: center;
+}
+
+
+.button{
+  background-color: #2A9D8F;
+  transition: background-color 0.5s ease-in-out;
+  border-radius: 20px;
+  width: 30%;
+}
+
+.button:hover{
+  background-color: red;
+}
+
+.loupe{
+  width: 10%;
+}
+
+.logo{
+  width: 5%;
+  display: flex;
+  justify-self: center;
+  flex-wrap: nowrap;
+  margin: 4%;
+  margin-bottom: 6%;
+  margin-top: 4%;
+}
+
+.divlogo{
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  --clr: #58bc82;
+  --clr-alpha: #9c9c9c60;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 300px;
+  justify-self: center;
+  border-radius: 20px;
+  padding: 1%;
+  background-color: white;
+}
+
+label{
+  display: block;
+  align-items: center;
+  font-weight: bold;
+}
+
+.input-span{
+  display: block;
+}
+
+.submit1{
+  background-color: #2A9D8F;
+  font-weight: bold;
+  width: 50%;
+  border-radius: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
