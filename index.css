@@ -8,7 +8,7 @@ footer{
 
     background-color: #FFF0E5;
     box-shadow: black 10px,10px,10px,10px;
-    padding-top: 1%;
+    padding-top: 2%;
 }
 
 .textefooter{
@@ -34,6 +34,8 @@ h3{
     display: flex;
     justify-content: center;
     transition: color 0.5s ease-in-out;
+    font-weight: bold;
+    margin-right: 1.5%;
 }
 
 .pfooter:hover{
@@ -65,11 +67,10 @@ h3{
     width: 5%;
     display: flex;
     justify-self: center;
-    display: inline;
     flex-wrap: nowrap;
-    margin: 2%;
-    margin-bottom: 1%;
-    margin-top: -2%;
+    margin: 4%;
+    margin-bottom: 6%;
+    margin-top: 4%;
 }
 
 .divlogo{
@@ -77,21 +78,41 @@ h3{
     justify-content: center;
 }
 
-@font-face {
-    font-family: 'Liberation sans';
-    src: url('./KaushanScript-Regular.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
+.form {
+    --clr: #58bc82;
+    --clr-alpha: #9c9c9c60;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 300px;
+    justify-self: center;
+    border-radius: 20px;
+    padding: 1%;
+    background-color: white;
+  }
 
-@font-face {
-    font-family: 'Liberation sans';
-    src: url('./KaushanScript-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
+  label{
+    display: block;
+    align-items: center;
+    font-weight: bold;
+  }
+
+  .input-span{
+    display: block;
+  }
+
+  .submit{
+    background-color: #2A9D8F;
+    font-weight: bold;
+    width: 50%;
+    border-radius: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+
 
 * {
     font-family: 'Liberation sans', sans-serif;
@@ -111,11 +132,12 @@ h3{
     h3{
     }
 
-    p{
-        
-        display: flex;
-        justify-content: center;
+    .form{
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
     }
+
 
     .pfooter{
         margin-top: 2%;
@@ -123,5 +145,8 @@ h3{
         display: flex;
         justify-content: center;
     }
+
+    
+
 
 }
