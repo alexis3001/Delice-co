@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Délices & Co</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet" href="text/css" href="style2.css" />
-
+    <link rel="stylesheet" href="./index.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"
       rel="stylesheet"
@@ -18,7 +17,41 @@
   </head>
   <body>
     <header>
-      <h6>head</h6>
+      <div class="header-burger">
+        <input type="checkbox" id="menu-toggle" hidden />
+        <label for="menu-toggle" class="menu-burger">
+          <img src="./images/menuburger.png" alt="menuburger" />
+        </label>
+        <div class="menu">
+          <ul>
+            <li><a href="recettes.html">Recettes</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu3">
+        <nav>
+          <ul>
+            <li><a href="recettes.html">Recettes</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-title">
+        <a href="index.html"
+          ><img class="logosite" src="./images/logosite.png" alt="logosite"
+        /></a>
+      </div>
+      <div class="menu-inscription-connexion">
+        <input type="checkbox" id="menu-toggle2" hidden />
+        <label for="menu-toggle2" class="menu-login">
+          <img class="imglogin" src="./images/login.png" alt="login" />
+        </label>
+        <div class="menu2">
+          <a href="connexion.html">Connexion</a>
+          <a href="inscription.html">Inscription</a>
+        </div>
+      </div>
     </header>
     <main>
       <div class="container">
@@ -42,10 +75,10 @@
           <input type="text" placeholder="Rechercher..." />
         </div>
       </div>
-      <section>
+      <section class="content-i">
         <h2>Recette de la semaine</h2>
         <h3><b>Tacos Mexcicain</b></h3>
-        <div class="content-intro">
+        <div class="content-intro-i">
           <img class="img-intro" src="./images/tacos 1.jpg" alt="Tacos" />
           <p>
             Prépare-toi à faire voyager tes papilles direction le Mexique avec
@@ -60,6 +93,190 @@
           </p>
         </div>
       </section>
+      <hr />
+      <section class="product">
+        <div class="instrcution">
+          <h3>Recette Tacos mexicain (4 personnes)</h3>
+          <p>
+            <b>Préparation :</b> 2 heures Repos : 1 heure 30 minutes Cuisson :
+            20 minutes Temps total : 2 heures 20 minutes Préparation de la
+            viande hachée
+          </p>
+        </div>
+      </section>
+      <section class="ustensiles-section">
+        <div class="ustensiles">
+          <img src="./images/poêle.jpg" alt="poêle" />
+          <p>Une poêle</p>
+        </div>
+        <div class="ustensiles">
+          <img src="./images/couteau.jpg" alt="couteau" />
+          <p>Un couteau</p>
+        </div>
+        <div class="ustensiles">
+          <img src="./images/bol.jpg" alt="bol" />
+          <p>Un bol</p>
+        </div>
+        <div class="ustensiles">
+          <img src="./images/planche-découper.jpg" alt="planche à découper" />
+          <p>Planche à découper</p>
+        </div>
+      </section>
+      <hr />
+      <section class="ingrédients2-p">
+        <div class="Ingrédients2-intro">
+          <h3>Ingrédients pour 4 personnes :</h3>
+          <p><b>Pour les Tortillas :</b></p>
+        </div>
+        <div class="ingrédients2">
+          <img src="./images/tortillas.jpg" alt="tortillas" />
+          <p>Tortillas de maîs</p>
+        </div>
+        <p class="garniture-p"><b>Garniture principale :</b></p>
+        <div class="ingrédients2">
+          <img src="./images/boeuf.jpg" alt="boeuf" />
+          <p>500g de boeuf haché</p>
+        </div>
+        <div class="ingrédients2">
+          <img src="./images/oignon.jpg" alt="oignon" />
+          <p>500g de boeuf haché</p>
+        </div>
+        <div class="ingrédients2">
+          <img src="./images/poivron.jpg" alt="poivron" />
+          <p>Poivron Rouge ou vert</p>
+        </div>
+        <div class="ingrédients2">
+          <img src="./images/maïs.jpg" alt="mais" />
+          <p>Maïs</p>
+        </div>
+        <div class="ingrédients2">
+          <img src="./images/aïl.jpg" alt="aïl" />
+          <p>1 à 2 gousses d'aïl</p>
+        </div>
+        <div class="ingrédients2">
+          <img src="./images/épices.jpg" alt="épices" />
+          <p>Epices : cumin, paprika, piment...</p>
+        </div>
+      </section>
+      <hr />
+      <section class="ingrédients2-p">
+        <div class="Ingrédients2-intro">
+          <p><b>Accompagnement & Toppings :</b></p>
+        </div>
+        <div class="ingrédients2">
+          <img src="./images/cheddar.jpg" alt="cheddar" />
+          <p>Fromage râpé</p>
+        </div>
+        <div class="ingrédients2">
+          <img src="./images/salade.jpg" alt="salade" />
+          <p>Laitue ou salade verte</p>
+        </div>
+        <div class="ingrédients2">
+          <img src="./images/tomates.jpg" alt="tomates" />
+          <p>Tomates en dés ou salsa</p>
+        </div>
+        <div class="ingrédients2">
+          <img src="./images/guacamole.jpg" alt="guacamole" />
+          <p>Guacamole</p>
+        </div>
+        <div class="ingrédients2">
+          <img src="./images/crème-fraiche.jpg" alt="crème fraîche" />
+          <p>Crème fraîche ou sauce blanche</p>
+        </div>
+        <div class="ingrédients2">
+          <img src="./images/tabasco.jpg" alt="tabasco" />
+          <p>Sauce piquante (si tu aimes)</p>
+        </div>
+      </section>
+      <hr />
+      <h3>Etape de préparation</h3>
+      <section class="preparation">
+        <div class="preparation-inst">
+          <img src="./images/inst-légumes.avif" alt="légumes" />
+          <p>
+            1. Préchauffez le four à 180 degrés. Émincez l'oignon. Épépinez le
+            le poivron vert. Ciselez détaillez le poivron ainsi que la tomate.
+            Égouttez les haricots rouges (Si vous en avez).
+          </p>
+        </div>
+        <div class="preparation-inst">
+          <img src="./images/inst-viandes.avif" alt="viandes" />
+          <p>
+            2. Incorporer le tout à la poêlée les légumes,ainsi que la viandes
+            (boeuf ou poulet) et poursuivre la cuisson pendant 5 min.
+          </p>
+        </div>
+        <div class="preparation-inst">
+          <img src="./images/inst-cuisson.avif" alt="cuisson" />
+          <p>
+            3. Ajoutez ensuite l’oignon, le piment vert, le poivron vert, les
+            épices de Guadalajara et le concentré de tomates, puis faites sauter
+            le tout 2 minutes de plus.
+          </p>
+        </div>
+        <div class="preparation-inst">
+          <img src="./images/inst-epice.avif" alt="épices" />
+          <p>
+            4. Ajoutez la tomate, les haricots kidney (si vous en avez) dans la
+            poêle, couvrez et laissez mijoter 10 à 12 minutes à feu moyen-doux.
+            Salez et poivrez. Si vous trouvez la sauce trop liquide, poursuivez
+            la cuisson 2 à 3 minutes sans couvercle pour qu’elle réduise.
+          </p>
+        </div>
+        <div class="preparation-inst">
+          <img src="./images/inst-tortillas.avif" alt="tortillas" />
+          <p>
+            5. Pendant ce temps, disposez les tortillas sur une plaque
+            recouverte de papier sulfurisé et réchauffez-les 5 minutes au four.
+          </p>
+        </div>
+        <div class="preparation-inst">
+          <img src="./images/inst-disposition.avif" alt="disposition" />
+          <p>
+            6. Servez les tacos dans les assiettes, remplissez-les de mélange au
+            poulet, puis garnissez de cheddar et d’une cuillère à soupe de crème
+            aigre par personne.
+          </p>
+        </div>
+        <hr />
+        <iframe
+          class="video"
+          src="https://www.youtube.com/embed/qWZWH1EmQOE?si=UAt4UX8wFJE_xZ8U"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <p>
+          Recette Tacos Mexcicain en vidéo <br />(Exemple de recette possible)
+        </p>
+      </section>
+      <hr />
     </main>
+    <footer>
+      <section class="contacter" id="contact">
+        <h3>Nous contacter:</h3>
+        <p class="textefooter">
+          Email: <br /><input type="datetime" name="votre nom" id="" />
+        </p>
+        <p class="textefooter">
+          Nom: <br /><input type="datetime" name="" id="" />
+        </p>
+        <button type="reset" class="button textefooter" form="">Envoyer</button>
+      </section>
+      <h3 class="h3footer">Nos réseaux:</h3>
+      <div class="divlogo">
+        <img src="./images/youtube.png" alt="youtube" class="logo" />
+        <img src="./images/instagram.png" alt="instagram" class="logo" />
+        <img src="./images/twitter.png" alt="twitter" class="logo" />
+      </div>
+      <div class="divfooter">
+        <p class="pfooter">Mention légale -</p>
+        <p class="pfooter">Paramètre des cookie-</p>
+        <p class="pfooter">Condition d'utilisation général</p>
+      </div>
+      <p class="pfooter">Copyright © 2025. Tous droits réservés.</p>
+    </footer>
   </body>
 </html>
